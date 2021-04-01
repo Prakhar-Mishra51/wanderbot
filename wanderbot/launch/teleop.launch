@@ -1,0 +1,6 @@
+<launch>
+  <node name="keyboard_driver" pkg="wanderbot"
+              type="key_publisher.py"/>
+  <node name="keys_to_twist" pkg="wanderbot"
+              type="key_publisher_rate_ramp.py" output="screen"/>
+</launch>
